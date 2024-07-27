@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    transition: all 0.5s;
+    position: absolute;
+}
+
+
+.box2 {
+
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    position: absolute;
+    transition: all 1s;
+}
+
+.box_wrapper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+
+.box_wrapper:hover .box {
+    transform: scaleX(2);
+    transition: all 1s;
+}
+
+.box_wrapper:hover .box2 {
+    transform: scaleY(2);
+    transition: all 1s;
+}
+
+.boxes {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: all 1s;
+}
+
+.boxes:hover {
+    transform: rotate(-360deg);
+    transition: all 1s;
+}
+
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    display: flex;
+}
+
+.box3 {
+    width: 50%;
+    height: 200px;
+    background-color: rgba(0, 0, 255, 0.534);
+    transition: all 1s;
+}
+
+.box4 {
+    width: 50%;
+    height: 200px;
+    transition: all 1s;
+    background-color: rgba(0, 0, 255, 0.534);
+}
+
+
+.wrapper:hover .box3 {
+    transform: translateX(-100px);
+    transition: all 1s;
+}
+
+.wrapper:hover .box4 {
+    transform: translateX(100px);
+    transition: all 1s;
+}
